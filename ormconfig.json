@@ -1,0 +1,27 @@
+[
+  {
+    "name": "default",
+    "type": "mongodb",
+    "url": "mongodb://localhost/butternut",
+    "synchronize": false,
+    "logging": true,
+    "logger": "all",
+    "useNewUrlParser": true,
+    "useUnifiedTopology": true,
+    "migrationsRun": true,
+    "entities": [
+      "src/app/*/entity/*.entity.ts"
+    ],
+    "migrations": [
+      "src/migrations/*.ts"
+    ],
+    "subscribers": [
+      "src/subscriber/**/*.ts"
+    ],
+    "cli": {
+      "entitiesDir": "src/app/**/entity",
+      "migrationsDir": "src/migrations",
+      "subscribersDir": "src/subscriber"
+    }
+  }
+]
